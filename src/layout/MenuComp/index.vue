@@ -15,7 +15,7 @@
         :collapse="layoutSetStore.isFold ? true : false"
         background-color="#D7D7D7"
       >
-        <el-menu-item v-for="(item,index) in menuList" :key="index" :index="index">
+        <el-menu-item v-for="(item,index) in menuList" :key="index">
           <el-icon>
             <component :is="item.icon"></component>
           </el-icon>

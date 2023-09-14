@@ -20,10 +20,7 @@
         </el-menu>
       </el-scrollbar> -->
     </div>
-    <div
-      class="layout_main"
-      :class="{ fold: layoutSetStore.isFold ? false : true }"
-    >
+    <div class="layout_main">
       <MainComp></MainComp>
     </div>
   </div>
@@ -33,9 +30,7 @@
 import MenuComp from './MenuComp/index.vue'
 import Tabbar from './TabbarComp/index.vue'
 import MainComp from './MainComp/index.vue'
-import useLayoutSetStore from '@/store/modules/setting'
 
-const layoutSetStore = useLayoutSetStore()
 </script>
 <script lang="ts">
 export default {
